@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>FreeCodeCamp Survey Form</h2>
+        <p>Thank you for taking the time to help us improve the platform:</p>
+        <form action="#" method="POST">
+            <!-- Text Input -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <label for="name">Email:</label>
+            <input type="text" id="email" name="email" placeholder="Enter your email" required>
+            <label for="name">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <!-- Dropdown (Select) -->
+            <label for="option">Which option best descibe your current role?:</label>
+            <select id="option" name="option" required>
+                <option value="" disabled selected>Select current role</option>
+                <option value="student">Student</option>
+                <option value="full time job">Full time job</option>
+                <option value="full time learner">Full time learner</option>
+                <option value="prefer not say">Prefer not say</option>
+                <option value="other">other</option>
+            </select>
+
+            <!-- Radio Buttons -->
+            <label>Would  you recommend freeCodeCamp to a friend?</label>
+            <label>
+                <input type="radio" name="friend" value="Definetly" required>
+                Definetly
+            </label>
+            <label>
+                <input type="radio" name="friend" value="Maybe" required>
+                Maybe
+            </label>
+            <label>
+                <input type="radio" name="friend" value="Not sure" required>
+                Not sure
+             <!-- dropdown -->
+
+            </label>
+            <label for="select">What is your favorite feature of freeCode Camp?:</label>
+            <select id="select" name="select" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="challenges">Challenges</option>
+                <option value="projects">Projects</option>
+                <option value="community">Community</option>
+                <option value="open source">Open <source></option>
+            </select>
+
+            <!-- Checkboxes -->
+            <label>What would you like to se improved?(Check all that apply):</label>
+            <label>
+                <input type="checkbox" name="apply" value="front-end projects">
+                Front-end projects
+            </label>
+            <label>
+                <input type="checkbox" name="apply" value="back-end projects">
+                Back-end projects
+            </label>
+            <label>
+                <input type="checkbox" name="apply" value="data visualation">
+                Data visualation
+            </label>
+            <label>
+                <input type="checkbox" name="apply" value="challenges">
+                Challenges 
+            </label>
+            <label>
+                <input type="checkbox" name="apply" value="open sources community">
+                Open Source Community
+            </label>
+            <label>
+                <input type="checkbox" name="apply" value="gitter help rooms">
+            Gitter help rooms
+            </label>
+            <label>
+                <input type="checkbox" name="apply" value="videos">
+            Videos
+            </label>
+            <label>
+                <input type="checkbox" name="apply" value="city meetups">
+             City meetups
+            </label>
+            <label>
+                <input type="checkbox" name="apply" value="wiki">
+            Wiki
+            </label>
+            <label>
+                <input type="checkbox" name="apply" value="forum">
+            Forum
+            </label>
+            <label>
+                <input type="checkbox" name="apply" value="additional courses">
+            Additional Courses
+            </label>
+
+            <!-- Textarea -->
+            <label for="comments">Any Comments or suggest:</label>
+            <textarea id="comments" name="comments" rows="4" placeholder="Enter your comment here..."></textarea>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
